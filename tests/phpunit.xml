@@ -1,0 +1,14 @@
+<!--suppress XmlUnboundNsPrefix -->
+<phpunit bootstrap="./Bootstrap.php" convertNoticesToExceptions="false">
+  <testsuites>
+    <testsuite name="TalkyLabs Reach Unit Test Suite">
+      <directory>./Reach/Unit</directory>
+      <!--<exclude>WorkflowTest.php</exclude> -->
+    </testsuite>
+  </testsuites>
+  <coverage>
+    <include>
+      <directory suffix=".php">../src</directory>
+    </include>
+  </coverage>
+</phpunit>

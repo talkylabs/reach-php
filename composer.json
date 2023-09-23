@@ -1,0 +1,38 @@
+{
+    "name": "talkylabs/reach-sdk",
+    "type": "library",
+    "description": "A PHP wrapper for Reach@TalkyLabs's API",
+    "keywords": ["reach", "talkylabs", "sms", "api"],
+    "homepage": "https://github.com/talkylabs/reach-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Reach API Team",
+            "email": "help@talkylabs.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^6.3 || ^7.0",
+        "phpunit/phpunit": ">=7.0 < 10"
+    },
+    "suggest": {
+        "guzzlehttp/guzzle": "An HTTP client to execute the API requests"
+    },
+    "autoload": {
+        "psr-4": {
+            "Reach\\": "src/Reach/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "": "src/Reach/",
+            "Reach\\Tests\\": "tests/Reach/"
+        }
+    },
+    "config": {
+        "lock": false
+    }
+}
